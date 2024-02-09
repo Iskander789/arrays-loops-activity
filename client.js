@@ -8,6 +8,16 @@
  */
 
 
+const hobbies = ['Spanish language', 'Chess', 'Skyrim', 'Cycling', 'Cooking'];
+
+console.log('Group hobbies:');
+
+for (let hobby of hobbies) {
+     console.log(hobby);
+}
+
+console.log('Total number of hobbies: ', hobbies.length);
+
 // Example output
 // 1. swimming
 // 2. board games
