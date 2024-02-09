@@ -8,12 +8,12 @@
  */
 
 
-const hobbies = 
-     ['Spanish language', 
-     'Chess', 
-     'Skyrim', 
-     'Cycling', 
-     'Cooking'];
+const hobbies =
+     ['Spanish language',
+          'Chess',
+          'Skyrim',
+          'Cycling',
+          'Cooking'];
 
 console.log('Group hobbies:');
 
@@ -40,21 +40,21 @@ console.log('Total number of hobbies: ', hobbies.length);
  * 4. Output the array and number of times teal was found
  */
 
-const colors = 
-     ['Burgundy', 
-     'Teal', 
-     'Goldenrod', 
-     'Periwinkle', 
-     'Winedark'];
+const colors =
+     ['Burgundy',
+          'Teal',
+          'Goldenrod',
+          'Periwinkle',
+          'Winedark'];
 
 console.log('Array of colors as strings: ', colors);
 
 let tealCount = 0
 
-for (let color of colors){
+for (let color of colors) {
      if (color === 'Teal') {
-          tealCount ++;
-     } 
+          tealCount++;
+     }
 }
 
 console.log('Number of times Teal occurs in the array:', tealCount);
@@ -74,6 +74,23 @@ console.log('Number of times Teal occurs in the array:', tealCount);
  * 4. Output the original array, odd number array and even number array
  */
 
+const numbers =
+     [1, 2, 3, 5, 8, 13, 21, 34]
+
+let oddNumbers = [];
+let evenNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+     if (numbers[i] % 2 === 0) {
+          evenNumbers.push(numbers[i]);
+     } else {
+          oddNumbers.push(numbers[i])
+     };
+}
+
+console.log('Original array : ', numbers);
+console.log('Odd number array : ', oddNumbers);
+console.log('Even number array : ', evenNumbers);
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
