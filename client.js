@@ -8,7 +8,12 @@
  */
 
 
-const hobbies = ['Spanish language', 'Chess', 'Skyrim', 'Cycling', 'Cooking'];
+const hobbies = 
+     ['Spanish language', 
+     'Chess', 
+     'Skyrim', 
+     'Cycling', 
+     'Cooking'];
 
 console.log('Group hobbies:');
 
@@ -35,6 +40,24 @@ console.log('Total number of hobbies: ', hobbies.length);
  * 4. Output the array and number of times teal was found
  */
 
+const colors = 
+     ['Burgundy', 
+     'Teal', 
+     'Goldenrod', 
+     'Periwinkle', 
+     'Winedark'];
+
+console.log('Array of colors as strings: ', colors);
+
+let tealCount = 0
+
+for (let color of colors){
+     if (color === 'Teal') {
+          tealCount ++;
+     } 
+}
+
+console.log('Number of times Teal occurs in the array:', tealCount);
 
 // Example output
 // green, red, teal, orange, teal
