@@ -107,6 +107,17 @@ console.log('Even number array : ', evenNumbers);
  * 4. Output both arrays
  */
 
+const booleanValues = [true, false, true, false, true];
+
+let toggled = [];
+
+for (let i = 0 ; i < booleanValues.length ; i++) {
+     toggled.push(!booleanValues[i]);
+}
+
+console.log('Original Boolean Values: ', booleanValues);
+console.log('Toggled Boolean values: ', toggled);
+
 
 // Example output
 // true, false, true, true
@@ -125,7 +136,15 @@ console.log('Even number array : ', evenNumbers);
  * Hint: Try using a while loop for this one.
  */
 
+const numArray = [1, 7, 3, 5, 12, 2, 16, 0, 13, 0, 0, 0];
 
+console.log(numArray);
+
+while (numArray[numArray.length - 1] === 0){
+     numArray.pop();
+}
+
+console.log(numArray);
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
