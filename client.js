@@ -111,7 +111,7 @@ const booleanValues = [true, false, true, false, true];
 
 let toggled = [];
 
-for (let i = 0 ; i < booleanValues.length ; i++) {
+for (let i = 0; i < booleanValues.length; i++) {
      toggled.push(!booleanValues[i]);
 }
 
@@ -138,13 +138,13 @@ console.log('Toggled Boolean values: ', toggled);
 
 const numArray = [1, 7, 3, 5, 12, 2, 16, 0, 13, 0, 0, 0];
 
-console.log(numArray);
+console.log('Original number array: ', numArray);
 
-while (numArray[numArray.length - 1] === 0){
+while (numArray[numArray.length - 1] === 0) {
      numArray.pop();
 }
 
-console.log(numArray);
+console.log('Number array with final zeros removed: ', numArray);
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
@@ -160,6 +160,26 @@ console.log(numArray);
  * 3. Log the highest and lowest number to the console
  */
 
+const largishArray = [2, 2, -3, 7, 4, 1, 7, 12, 8];
+
+let highNumber = largishArray[0];
+
+let lowNumber = largishArray[0];
+
+for (let i = 1; i < largishArray.length; i++) {
+     if (largishArray[i] > highNumber) {
+       highNumber = largishArray[i];
+     }
+     if (largishArray[i] < lowNumber) {
+       lowNumber = largishArray[i];
+     }
+   }
+
+console.log('Original largish array: ', largishArray);
+
+console.log('High number: ', highNumber);
+
+console.log('Low number: ', lowNumber);
 
 // Example output
 // 2, 2, -3, 7, 4, 1, 7, 12, 8
